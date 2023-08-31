@@ -7,11 +7,12 @@ Makefile used by make to build a shared object file needed for testing
 p4Heap.h header file with the signatures for public "shared" functions
 p4Heap.c source code with functions that must be completed
 
-### To build p4Heap object file:
-EDIT     vim p4Heap.c (complete functions where indicated by TODO tags)
+### Code Implemented:
+p4Heap.c methods: void * balloc(int size); int bfree(void *ptr);
+                  int coalesce(); int init_heap(int sizeOfRegion)
 COMPILE  make         (this will build p4Heap.o and libheap.so)
 
-### To test your heap functions:
+### To test heap functions:
 cd tests              (change to the tests sub-directory)
 make                  (compiles all tests and runs test_align1)
 make partA            (runs the tests that only require balloc works)
